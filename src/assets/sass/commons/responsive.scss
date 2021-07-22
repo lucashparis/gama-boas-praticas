@@ -1,0 +1,66 @@
+@media(max-width: 600px){
+    .background--one{
+        background-size:cover;
+        
+        .block-section--one{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    .background--two{
+        height: 2200px;
+        background-size:cover;
+
+        .block-section--two{
+            width: 65%;
+            height: 80%;
+            display: grid;
+            text-align: center;
+
+            & p{
+                text-align: center;
+                margin: 40px 0 0 0;
+            }
+
+            & img {
+                width: 100%;
+                margin: 0 auto;
+                max-width: none;
+            }
+        }
+
+        .footer-contain{
+            width: 90%;
+            margin: 0 auto;
+            
+            & img{
+                margin: 0px 0 0 10px;
+                width: 155px;
+            }
+        }
+    }
+
+    .main-left {
+        position: fixed;
+        left: 2%;
+        bottom: 2%;
+        cursor: pointer;
+      
+        & img{
+          width: 75px;
+        }
+        
+        &:hover {
+          position: fixed;
+          left: 2%;
+          bottom: 2%;
+          cursor: pointer;
+        
+          & img{
+            transform: scale(0.5);
+            transition: width 1.0s, height 1.0s;
+          }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.section {
+    width: 100%;
+}
+
+.background--one {    
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .block-section--one {
+        width: 100%;
+        display: block;
+        text-align: center;
+        
+        & h1 {
+            font-weight: 400;
+            font-size: 22px;
+            margin-bottom: 32px;
+        }
+
+        & img:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+.background--two  {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: 100% 100%;
+    
+    .block-section--two {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 4%;
+        height: 100%;
+
+        & img {
+            max-width: 60%;
+        }
+
+        .text-block--two {
+            height: 100%;
+            font-size: $fontSizeDefault;
+            text-align: right;
+
+        }
+    }
+}
